@@ -28,6 +28,6 @@ const indexRoutes = require("./routes/index");
 app.use("/", indexRoutes);
 
 // je config le port
-const port = 8080 || process.env.PORT; //pour le pour en ligne
+const port = process.env.PORT || 8080; //pour le pour en ligne
 // je lance le port et j'affiche que cela fonctionne par une callback
 app.listen(port, () => console.log(`Serveur lancé sur le port ${port}.`));
